@@ -1,5 +1,5 @@
 (function ($) {
-	$.fn.moZlider = function (options) {
+	$.fn.moluZlider = function (options) {
 
 		var totalSlides, slideDuration, animationDur, element = this,
 			currentSlide, slideTimer, nextSlide;
