@@ -1,7 +1,7 @@
  .slider {
- 	padding: 0;
- 	margin: 0;
- 	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     position: relative;
     padding-top: 56%;
     overflow: hidden;
@@ -50,4 +50,32 @@ li h1 {
     text-align: center;
     color: orange;
     padding-top: 1em;
+}
+
+.controls {
+    position: absolute;
+    z-index: 60;
+    width: 100%;
+    height: 100%;
+    font-size: 6em;
+    color: orange;
+    top:0;
+
+    .next {
+        position: relative;
+        z-index: 60;
+        float: right;
+        top: 35%;
+        right: 5%;
+
+    }
+
+    .previous {
+        position: relative;
+        z-index: 60;
+        float: left;
+        top: 35%;
+        left: 5%;     
+
+    }
 }

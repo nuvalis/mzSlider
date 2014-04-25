@@ -2,13 +2,13 @@
 	$.fn.mzSlider = function (options) {
 
 		var totalSlides, slideDuration, animationDur, element = this,
-			currentSlide, slideTimer, nextSlide;
+			currentSlide, slideTimer, nextSlide, animating;
 
 		var settings = $.extend({
 			// These are the defaults.
 			debug: false,
 			slideDuration: 4000,
-			animationDur: 1000,
+			animationDur: 400,
 			element: "li",
 			currentSlide: 0,
 			effect: "margin-left",
@@ -64,6 +64,12 @@
 
 		function animateSlide(currentSlide, nextSlide) {
 
+			if(animating){
+				return false;
+			}
+
+			animating = true;
+
 			debugLog("Slide should be " + currentSlide);
 
 			slides.eq(settings.currentSlide).css('z-index', 3);
@@ -84,6 +90,7 @@
 				slides.eq(settings.currentSlide).css('display', "none"); // Removes Glitch and hides currentSlide
 				debugLog("Waiting cssTimer... " + settings.animationDur + "ms");
 				settings.currentSlide = nextSlide;
+				animating = false;
 				timer();
 			}, settings.animationDur);
 
@@ -105,6 +112,18 @@
 			}
 
 		}
+
+		element.find(".previous").click(function() {
+			debugLog("Clicked Previous");
+		  	clearInterval(slideTimer);
+		  	changeSlide("prev");
+		});
+
+		element.find(".next").click(function() {
+			debugLog("Clicked Next");
+		  	clearInterval(slideTimer);
+		  	changeSlide("next");
+		});
 
 	};
 })(jQuery);
