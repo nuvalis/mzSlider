@@ -34,14 +34,16 @@ The basic setup will look like this ->
 	
 Example HTML code
 
-	<ul>
+	<ul class="slider">
 		<li>Any element inside here</li>
 		<li><img src="example.jpg" alt="Example"></li>
 		<li><p>I am a paragraph :D</p></li>
 		
-		<li><div class="image-selection">
-			<img src="example.jpg" alt="Example">
-			<img src="example.jpg" alt="Example">
-			<img src="example.jpg" alt="Example">					
-		</div></li>
+		<li>
+		  <div class="image-selection">
+		     <img src="example.jpg" alt="Example">
+		     <img src="example.jpg" alt="Example">
+		     <img src="example.jpg" alt="Example">					
+		  </div>
+		</li>
 	</ul>
