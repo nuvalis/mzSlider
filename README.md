@@ -40,10 +40,10 @@ Example HTML code
 		<li><p>I am a paragraph :D</p></li>
 		
 		<li>
-		  <div class="image-selection">
-		     <img src="example.jpg" alt="Example">
-		     <img src="example.jpg" alt="Example">
-		     <img src="example.jpg" alt="Example">					
+		  <div class="image-thumbs">
+		     <img src="example-thumb.jpg" alt="Example">
+		     <img src="example-thumb.jpg" alt="Example">
+		     <img src="example-thumb.jpg" alt="Example">					
 		  </div>
 		</li>
 	</ul>
