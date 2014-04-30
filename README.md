@@ -8,7 +8,7 @@ The basic setup will look like this ->
 	$(".slider").mzSlider();
 
 
-	Full set of current options ->
+Full set of current options ->
 
 	$(".slider").mzSlider({
 		
