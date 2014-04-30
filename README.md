@@ -33,6 +33,18 @@ The basic setup will look like this ->
 	});
 	
 Example HTML code
+	
+	<link rel="stylesheet" type="text/css" href="mzSlider.css">
+
+	<ul class="slider">
+		<li>Any element inside here</li>
+		<li><img src="example.jpg" alt="Example"></li>
+		<li><p>I am a paragraph :D</p></li>
+	</ul>
+
+Another example with a group of thumbs in one slide
+	
+	<link rel="stylesheet" type="text/css" href="mzSlider.css">
 
 	<ul class="slider">
 		<li>Any element inside here</li>
